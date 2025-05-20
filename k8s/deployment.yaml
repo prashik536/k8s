@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: my-container
-        image: nginx:alpine
+        image: docker push prashik536/aaple-lonar:latest
         ports:
-        - containerPort: 80
+        - containerPort: 8081
