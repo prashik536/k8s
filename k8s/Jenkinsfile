@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Deploy to Kubernetes') {
+            steps {
+                sh 'kubectl --kubeconfig=/var/lib/jenkins/.kube/kubeconfig apply -f k8s/deployment.yaml'
+            }
+        }
+    }
+}
