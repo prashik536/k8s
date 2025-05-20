@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: my-container
-        image: docker push prashik536/aaple-lonar:latest
+        image: prashik536/aaple-lonar:latest
         ports:
         - containerPort: 8081
